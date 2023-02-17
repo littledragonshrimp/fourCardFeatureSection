@@ -1,0 +1,193 @@
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$darkblue: hsl(234, 12%, 34%);
+$gray: hsl(229, 6%, 66%);
+$white: hsl(0, 0%, 98%);
+
+.attribution { margin-top: 4rem;font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%);}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    //200 400 600
+    font-size: 15px;
+    font-weight: 400;
+    color: $gray;
+}
+body{
+    background-color: $white;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    h1{
+        font-weight: 200;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .powered{
+        color: $darkblue;
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    //border: 2px solid black;
+    border-radius: .5rem;
+    background-color: white;
+    min-height: 15rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 0px 10px 10px $gray;
+    p, h2{
+        margin: 2rem 2rem -1.5rem 2rem;
+    }
+    h2{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $darkblue;
+    }
+    img{
+        position: absolute;
+        justify-content: flex-end;
+        align-self: flex-end;
+        margin-top: 9rem;
+        margin-right: 1rem;
+    }
+}
+.middle{
+    width: 100%;
+    justify-self: center;
+}
+
+.supervisor{
+    border-top: 4px solid $cyan;
+}
+
+.teamwork{
+    border-top: 4px solid $red;
+}
+
+.karma{
+    border-top: 4px solid $orange;
+}
+
+.calculator{
+    border-top: 4px solid $blue;
+}
+
+
+/////////////////////
+///Desktop mode begin
+@media screen and (min-width: 1200px) {
+
+body{
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    max-width: 45%;
+    margin-bottom: .5rem;
+h1{
+    margin-bottom: -.2rem;
+}
+
+.powered{
+    margin-bottom: .2rem;
+}
+    span{
+        margin-bottom: -2rem;
+    }
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+.middle{
+    flex-direction: column;
+}
+
+.card{
+    min-width: 25rem;
+    width: 30%;
+    height: 17rem;
+    margin: 2rem;
+    background-color: $white;
+   
+        h2, p {
+        text-align: start;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    img{
+        position: relative;
+        margin-top: 4rem;
+        margin-right: 2rem;
+    }
+}
+
+.supervisor{
+    border-top: 4px solid $cyan;
+}
+
+.teamwork{
+    border-top: 4px solid $red;
+}
+
+.karma{
+    border-top: 4px solid $orange;
+}
+
+.calculator{
+    border-top: 4px solid $blue;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
